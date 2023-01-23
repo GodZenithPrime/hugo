@@ -1,0 +1,411 @@
+# 全局配置
+baseURL = 'https://godzenithprime.github.io/'
+title = "GodZenith's blog"
+theme = "LoveIt"
+defaultContentLanguage = "zh-cn"
+languageName = "简体中文"
+languageCode = "CN"
+hasCJKLanguage = true
+paginate = 12
+googleAnalytics = ""
+copyright = "版权归属于GodZenith"
+enableRobotsTXT = true
+enableGitInfo = false
+enableEmoji = true
+ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
+
+# 作者信息
+[author]
+  name = "郭琢"
+  email = "17519499258@163.com"
+  link = "bilibili.com"
+
+# 菜单配置
+[menu]
+    [[menu.main]]
+        weight = 1
+        identifier = "posts"
+        pre = ""
+        post = ""
+        name = "所有文章"
+        url = "/posts/"
+        title = "所有文章"
+
+    [[menu.main]]
+        weight = 2
+        identifier = "tags"
+        pre = ""
+        post = ""
+        name = "标签"
+        url = "/tags/"
+        title = "标签"
+
+  [[menu.main]]
+        weight = 3
+        identifier = "categories"
+        pre = ""
+        post = ""
+        name = "分类"
+        url = "/categories/"
+        title = "分类"
+
+  [[menu.main]]
+        weight = 4
+        identifier = "documentation"
+        pre = ""
+        name = "文档"
+        url = "/categories/documentation/"
+        title = "文档"
+
+  [[menu.main]]
+        weight = 5
+        identifier = "about"
+        pre = ""
+        post = ""
+        name = "关于"
+        url = "/about/"
+        title = ""
+
+  [[menu.main]]
+        weight = 6
+        identifier = "github"
+        pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
+        post = ""
+        name = ""
+        url = "https://github.com/GodZenithPrime"
+        title = "GitHub"
+
+# 全局参数
+[params]
+    defaultTheme = "light"
+    dateFormat = "2006-01-02"
+    title = "GodZenith"
+    description = "GodZenith's blog"
+    images = [""]
+
+    [params.header]
+    desktopMode = "auto"
+    mobileMode = "auto"
+        [params.header.title]
+            logo = ""
+            name = "超级豚豚"
+            pre = "<i class='fa-solid fa-rocket' aria-hidden='true'></i>"
+            post = ""
+            typeit = true
+
+    [params.footer]
+        enable = true
+        custom = ""
+        hugo = false
+        copyright = true
+        author = true
+        since = 2022
+        icp = ""
+        license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+    [params.section]
+        paginate = 20
+        dateFormat = "01-02"
+        rss = 10
+
+    [params.list]
+        paginate = 20
+        dateFormat = "01-02"
+        rss = 10
+
+    [params.app]
+        title = "超级豚豚"
+        noFavicon = false
+        svgFavicon = ""
+        themeColor = "#ffffff"
+        iconColor = "#5bbad5"
+        tileColor = "#da532c"
+
+    [params.search]
+        enable = true
+        type = "algolia"
+        contentLength = 4000
+        placeholder = ""
+        maxResultLength = 10
+        snippetLength = 30
+        highlightTag = "em"
+        absoluteURL = false
+            [params.search.algolia]
+                index = "index.zh-cn"
+                appID = "PASDMWALPK"
+                searchKey = "b42948e51daaa93df92381c8e2ac0f93"
+
+    [params.home] # 主页信息设置
+    rss = 10
+        [params.home.profile] # 主页个人信息
+            enable = true
+            gravatarEmail = ""
+            avatarURL = "/images/avatar.png"
+            title = ""
+            subtitle = "<strong> 谨言慎行, 戒骄戒躁 </strong>"
+            typeit = true
+            social = true
+            disclaimer = ""
+        [params.home.posts]
+            enable = true
+            paginate = 6
+
+        [params.social] # 主页的社交信息设置
+          GitHub = "GodZenithPrime"
+          Linkedin = ""
+          Twitter = ""
+          Instagram = ""
+          Facebook = ""
+          Telegram = ""
+          Medium = ""
+          Gitlab = ""
+          Youtubelegacy = ""
+          Youtubecustom = ""
+          Youtubechannel = ""
+          Tumblr = ""
+          Quora = ""
+          Keybase = ""
+          Pinterest = ""
+          Reddit = ""
+          Codepen = ""
+          FreeCodeCamp = ""
+          Bitbucket = ""
+          Stackoverflow = ""
+          Weibo = ""
+          Odnoklassniki = ""
+          VK = ""
+          Flickr = ""
+          Xing = ""
+          Snapchat = ""
+          Soundcloud = ""
+          Spotify = ""
+          Bandcamp = ""
+          Paypal = ""
+          Fivehundredpx = ""
+          Mix = ""
+          Goodreads = ""
+          Lastfm = ""
+          Foursquare = ""
+          Hackernews = ""
+          Kickstarter = ""
+          Patreon = ""
+          Steam = ""
+          Twitch = ""
+          Strava = ""
+          Skype = ""
+          Whatsapp = ""
+          Zhihu = ""
+          Douban = ""
+          Angellist = ""
+          Slidershare = ""
+          Jsfiddle = ""
+          Deviantart = ""
+          Behance = ""
+          Dribbble = ""
+          Wordpress = ""
+          Vine = ""
+          Googlescholar = ""
+          Researchgate = ""
+          Mastodon = ""
+          Thingiverse = ""
+          Devto = ""
+          Gitea = ""
+          XMPP = ""
+          Matrix = ""
+          Bilibili = "242001477"
+          Discord = ""
+          DiscordInvite = ""
+          Lichess = ""
+          ORCID = ""
+          Pleroma = ""
+          Kaggle = ""
+          MediaWiki= ""
+          Plume = ""
+          HackTheBox = ""
+          RootMe= ""
+          Email = "17519499258@163.com"
+          RSS = ""
+
+    [params.page] # 文章页面全局配置
+        hiddenFromHomePage = false
+        hiddenFromSearch = false
+        twemoji = true
+        lightgallery = false
+        ruby = true
+        fraction = true
+        fontawesome = true
+        linkToMarkdown = true
+        rssFullText = false
+        [params.page.toc] # 目录配置
+            enable = true
+            keepStatic = true
+            auto = true
+        [params.page.code]
+            copy = true
+            maxShownLines = 80
+        [params.page.math]
+            enable = false
+            inlineLeftDelimiter = ""
+            inlineRightDelimiter = ""
+            blockLeftDelimiter = ""
+            blockRightDelimiter = ""
+            copyTex = true
+            mhchem = true
+        [params.page.mapbox]
+            accessToken = "pk.eyJ1IjoiZGlsbG9uenEiLCJhIjoiY2s2czd2M2x3MDA0NjNmcGxmcjVrZmc2cyJ9.aSjv2BNuZUfARvxRYjSVZQ"
+            lightStyle = "mapbox://styles/mapbox/light-v10?optimize=true"
+            darkStyle = "mapbox://styles/mapbox/dark-v10?optimize=true"
+            navigation = true
+            geolocate = true
+            scale = true
+            fullscreen = true
+        [params.page.share]
+            enable = true
+            Twitter = true
+            Facebook = true
+            Linkedin = false
+            Whatsapp = false
+            Pinterest = false
+            Tumblr = false
+            HackerNews = true
+            Reddit = false
+            VK = false
+            Buffer = false
+            Xing = false
+            Line = true
+            Instapaper = false
+            Pocket = false
+            Flipboard = false
+            Weibo = true
+            Blogger = false
+            Baidu = false
+            Odnoklassniki = false
+            Evernote = false
+            Skype = false
+            Trello = false
+            Mix = false
+        [params.page.comment] # 评论系统设置
+            enable = true
+            [params.page.comment.valine]
+              enable = true
+              appId = "hQNK8V3wr7a16Y99dgTrbR6n-gzGzoHsz"
+              appKey = "FwTUurBWCCb9trarVr1atk6n"
+              placeholder = ""
+              avatar = "mp"
+              meta= ""
+              pageSize = 10
+              lang = ""
+              visitor = true
+              recordIP = true
+              highlight = true
+              enableQQ = false
+              serverURLs = "https://hqnk8v3w.lc-cn-n1-shared.com"
+              # emoji data file name, default is "google.yml"
+              # ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
+              # located in "themes/LoveIt/assets/lib/valine/emoji/" directory
+              # you can store your own data files in the same path under your project:
+              # "assets/lib/valine/emoji/"
+              # emoji 数据文件名称, 默认是 "google.yml"
+              # ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
+              # 位于 "themes/LoveIt/assets/lib/valine/emoji/" 目录
+              # 可以在你的项目下相同路径存放你自己的数据文件:
+              # "assets/lib/valine/emoji/"
+              emoji = ""
+        [params.page.library] # 第三方库配置
+            [params.page.library.css]
+                # someCSS = "some.css"
+                # located in "assets/" 位于 "assets/"
+                # Or 或者
+                # someCSS = "https://cdn.example.com/some.css"
+            [params.page.library.js]
+                # someJavascript = "some.js"
+                # located in "assets/" 位于 "assets/"
+                # Or 或者
+                # someJavascript = "https://cdn.example.com/some.js"
+            [params.page.seo] # 页面 SEO 配置
+                images = []
+                [params.page.seo.publisher] # 出版者信息
+                  name = "xxxx"
+                  logoUrl = "/images/avatar.png"
+
+    [params.typeit] # TypeIt 配置
+        speed = 100
+        cursorSpeed = 1000
+        cursorChar = "|"
+        duration = -1
+
+    [params.verification] # 网站验证代码，用于 Google/Bing/Yandex/Pinterest/Baidu
+        google = ""
+        bing = ""
+        yandex = ""
+        pinterest = ""
+        baidu = ""
+
+    [params.seo]
+        image = "/images/Apple-Devices-Preview.png"
+        thumbnailUrl = "/images/screenshot.png"
+
+    [params.compatibility] # 兼容性设置
+        polyfill = false
+        objectFit = false
+
+[markup] # Hugo 解析文档的配置
+    [markup.highlight] # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
+        codeFences = true
+        guessSyntax = true
+        lineNos = true
+        lineNumbersInTable = true
+        noClasses = false
+
+    [markup.goldmark] # Goldmark 是 Hugo 0.60 以来的默认 Markdown 解析库
+        [markup.goldmark.extensions]
+            definitionList = true
+            footnote = true
+            linkify = true
+            strikethrough = true
+            table = true
+            taskList = true
+            typographer = true
+        [markup.goldmark.renderer]
+            unsafe = true
+
+    [markup.tableOfContents] # 目录设置
+        startLevel = 2
+        endLevel = 6
+
+
+[sitemap] # 网站地图配置
+    changefreq = "weekly"
+    filename = "sitemap.xml"
+    priority = 0.5
+
+[Permalinks] # Permalinks 配置 (https://gohugo.io/content-management/urls/#permalinks)
+    # posts = "h/:year/:mont:filename"
+    posts = ":filename"
+
+[privacy] # 隐私信息配置 (https://gohugo.io/about/hugo-and-gdpr/)
+    [privacy.googleAnalytics] # Google Analytics 相关隐私 (被 params.analytics.google 替代)
+        # ...
+
+    [privacy.twitter]
+        enableDNT = true
+
+    [privacy.youtube]
+        privacyEnhanced = true
+
+[mediaTypes]
+    [mediaTypes."text/plain"]
+        suffixes = ["md"]
+
+    [outputFormats.MarkDown] # 用于输出 Markdown 格式文档的设置
+        mediaType = "text/plain"
+        isPlainText = true
+        isHTML = false
+
+[outputs] # 用于 Hugo 输出文档的设置
+    home = ["HTML", "RSS", "JSON"]
+    page = ["HTML", "MarkDown"]
+    section = ["HTML", "RSS"]
+    taxonomy = ["HTML", "RSS"]
+    taxonomyTerm = ["HTML"]
+
